@@ -3,6 +3,14 @@
   scroll-behavior: smooth;
 }
 
+@font-face {
+  font-family: 'Redriver';
+  src: local('Redriver'), local('Redriver'),
+      url('/assets/font/Redriver.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
