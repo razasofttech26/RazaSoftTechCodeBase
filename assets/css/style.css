@@ -2432,3 +2432,7 @@ section {
 #headimg{
   transition: 0.5s all;
 }
+.logoimg{
+  transform: rotate(-1deg)  scale(1.5,1.5);
+padding-left: 10px;
+}
