@@ -297,7 +297,6 @@
 let i =0
 function changeImage () {
   const element = document.getElementById('headimg')
-  console.log(element.src)
     const srcArray = ["assets/img/features.png","assets/img/hero-img.png","assets/img/features-2.png","assets/img/features-3.png","assets/img/values-1.png","assets/img/values-2.png","assets/img/values-3.png"]
     element.src =   srcArray[i] 
 }
