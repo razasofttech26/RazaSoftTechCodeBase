@@ -2429,3 +2429,6 @@ section {
     min-height: 201px;
   }
 }
+#headimg{
+  transition: 0.5s all;
+}
