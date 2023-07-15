@@ -339,8 +339,8 @@ function sendEmail() {
            document.getElementById("number").value="";
    console.log(res.status);
    Swal.fire(
-    'Thank you!',
-    'Message send Successfully',
+    'Details Submitted',
+    'We will get touch with you soon',
     'success'
   )
   //  alert("message send successfully");
