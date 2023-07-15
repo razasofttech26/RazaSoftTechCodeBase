@@ -306,3 +306,62 @@ setInterval(()=>{
  
 },2000)
 
+
+/*******************Contact Form* */
+
+// emailjs.send("service_zmblks4","template_1jsq8kf",{
+//   name: "Jaffar",
+//   subject: "Test",
+//   number: "8976412394",
+//   email: "jaffarshaikh013@gmail.com",
+//   message: "i am testing",
+//   });
+
+function sendEmail() {
+  var params = {
+    name: document.getElementById("name").value,
+    subject: document.getElementById("subject").value,
+    number: document.getElementById("number").value,
+    email: document.getElementById("email").value,
+    message: document.getElementById("message").value,
+};
+
+
+  const serviceID = "service_zmblks4";
+  const templateID = "template_1jsq8kf"
+  emailjs.send(serviceID,templateID,params)
+  .then(
+      res =>{
+         document.getElementById("name").value="";
+    document.getElementById("email").value="";
+   document.getElementById("message").value="";
+           document.getElementById("subject").value="";
+           document.getElementById("number").value="";
+   console.log(res.status);
+   Swal.fire(
+    'Thank you!',
+    'Message send Successfully',
+    'success'
+  )
+  //  alert("message send successfully");
+      }
+
+  )
+  .catch(err=>console.log(err));
+}
+
+function submit () {
+const emailBox = document.getElementById('email')
+const contact_number = document.getElementById('number').value
+
+function phoneRegex(input_str) {
+  var regPattern = /^\d{3}\d{3}\d{4}$/;
+  return regPattern.test(input_str);
+ }
+emailBox.checkValidity() && phoneRegex(contact_number) ? sendEmail() : Swal.fire(
+  'Incorrect detail',
+  'Please enter correct detail',
+  'error'
+)
+}
+
