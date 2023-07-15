@@ -51,56 +51,12 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <!-- <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li> -->
-          <!-- <li><a class="nav-link scrollto" href="#team">Team</a></li> -->
-          <!-- <li><a href="blog.html">Blog</a></li> -->
-          <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li> -->
 
-          <!-- <li class="dropdown megamenu"><a href="#"><span>Mega Menu</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li>
-                <a href="#">Column 1 link 1</a>
-                <a href="#">Column 1 link 2</a>
-                <a href="#">Column 1 link 3</a>
-              </li>
-              <li>
-                <a href="#">Column 2 link 1</a>
-                <a href="#">Column 2 link 2</a>
-                <a href="#">Column 3 link 3</a>
-              </li>
-              <li>
-                <a href="#">Column 3 link 1</a>
-                <a href="#">Column 3 link 2</a>
-                <a href="#">Column 3 link 3</a>
-              </li>
-              <li>
-                <a href="#">Column 4 link 1</a>
-                <a href="#">Column 4 link 2</a>
-                <a href="#">Column 4 link 3</a>
-              </li>
-            </ul>
-          </li> -->
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+       
 
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
+          <li><a class="getstarted scrollto" href="#contact">Get Started</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -118,7 +74,7 @@
           <h2 data-aos="fade-up" data-aos-delay="400">We provide services to our client related to software and solution</h2>
           <div data-aos="fade-up" data-aos-delay="600">
             <div class="text-center text-lg-start">
-              <a href="#about" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+              <a href="#contact" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
                 <span>Get Started</span>
                 <i class="bi bi-arrow-right"></i>
               </a>
@@ -242,45 +198,10 @@
 
       </div>
 
-    </section><!-- End Services Section -->
-
-    <!-- ======= Pricing Section ======= -->
- <!-- End Pricing Section -->
-
-    <!-- ======= F.A.Q Section ======= -->
+    </section>
 
 
-    <!-- ======= Portfolio Section ======= -->
-
-    <!-- ======= Testimonials Section ======= -->
-  
-
-    <!-- ======= Team Section ======= -->
-
-    <!-- ======= Clients Section ======= -->
-    <!-- <section id="clients" class="clients">
-
-      <div class="container" data-aos="fade-up">
-
-        <header class="section-header">
-          <h2>Our Clients</h2>
-          <p>Temporibus omnis officia</p>
-        </header>
-
-        <div class="clients-slider swiper">
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
+      
 
     </section>End Clients Section -->
 
@@ -335,37 +256,33 @@
 
           <div class="col-lg-6">
             <!-- <form> -->
-              <div class="row gy-4">
+              <div class="row gy-4" id="formContainer">
 
                 <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name...." id="name" required>
+                  <input type="text" name="name" class="form-control" placeholder="Your Name...." id="name" onfocus="checkEmptyfield();checkallfield()" onblur="checkallfield()" required>
                 </div>
 
                 <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email..." id="email" required>
+                  <input type="email" class="form-control" name="email" placeholder="Your Email..." id="email" onfocus="checkEmptyfield();checkallfield()" onblur="checkallfield()" required>
                 </div>
                 <div class="col-md-12 ">
-                  <input type="text" class="form-control" min="10" max="12" name="number" placeholder="Your Contact Number.." id="number" required>
+                  <input type="text" class="form-control" min="10" max="12" name="number" placeholder="Your Contact Number.." id="number" onfocus="checkEmptyfield()" onblur="checkallfield()" required>
                 </div>
 
                 <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" id="subject" required>
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" id="subject" onfocus="checkEmptyfield();checkallfield()" onblur="checkallfield()" required>
                 </div>
 
                 <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" id="message" required></textarea>
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" id="message" onfocus="checkEmptyfield();checkallfield()" onblur="checkallfield()" required></textarea>
                 </div>
 
                 <div class="col-md-12 text-center">
-                  <!-- <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div> -->
 
-                  <button onclick="submit()" class="btn btn-primary">Send Message</button>
+                  <button onclick="submit()" id="submitbtn" class="btn btn-primary">Send Message</button>
                 </div>
 
               </div>
-            <!-- </form> -->
 
           </div>
 
@@ -386,36 +303,32 @@
         <div class="row gy-4">
           <div class="col-lg-5 col-md-12 footer-info">
             <a href="index.html" class="logo d-flex align-items-center">
-              <!-- <img src="assets/img/logo.png" alt="">
-              <span></span> -->
             </a>
             <p>11+ years in Tally software solutions, delivering quality services and customer satisfaction.</p>
             <div class="social-links mt-3">
               <a href='https://wa.me/+919619756588' class="twitter"><i class="bi bi-whatsapp"></i></a>
-              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a href='#' class="linkedin"><i class="bi bi-linkedin"></i></a>
+              <a  class="facebook"><i class="bi bi-facebook"></i></a>
+              <a  class="instagram"><i class="bi bi-instagram"></i></a>
+              <a  class="linkedin"><i class="bi bi-linkedin"></i></a>
             </div>
           </div>
 
           <div class="col-lg-2 col-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="/">Home</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#service">Services</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#hero">Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#contact">Contact us</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#services">Services</a></li>
             </ul>
           </div>
 
           <div class="col-lg-2 col-6 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development </a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">App Development</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Tally Modules</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#services">Web Development </a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#services">App Development</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#services">Product Management</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#services">Tally Modules</a></li>
             </ul>
           </div>
           <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">

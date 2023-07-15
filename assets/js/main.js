@@ -317,6 +317,30 @@ setInterval(()=>{
 //   message: "i am testing",
 //   });
 
+  function checkEmptyfield() {
+    const input = document.querySelectorAll('#formContainer div input')
+    for(let i=0;i<input.length;i++){
+      if(input[i].value === ""){
+        input[i].classList.add('requiredinput')
+      }
+      else{
+        input[i].classList.remove('requiredinput')
+      }
+    }
+  }
+
+  function checkallfield(){
+    const input = document.querySelectorAll('#formContainer div input')
+    for(let i=0;i<input.length;i++){
+      if(input[i].value === ""){
+          document.getElementById('submitbtn').disabled = true
+          return
+      }
+    }
+    document.getElementById('submitbtn').disabled = false
+  }
+  
+  checkallfield()
 function sendEmail() {
   var params = {
     name: document.getElementById("name").value,
@@ -353,6 +377,8 @@ function sendEmail() {
 function submit () {
 const emailBox = document.getElementById('email')
 const contact_number = document.getElementById('number').value
+
+   checkEmptyfield()
 
 function phoneRegex(input_str) {
   var regPattern = /^\d{3}\d{3}\d{4}$/;
