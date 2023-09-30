@@ -4,14 +4,23 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <script type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-</script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script> -->
+
+  <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script> -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+
+
+  </script>
   <script type="text/javascript">
-    (function(){
+    (function () {
       emailjs.init("fGfjewSmp91sJ885u");
     })();
-    </script>
+  </script>
+
   <title>RAZA SOFTECH</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
@@ -21,7 +30,8 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:
+  300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -34,6 +44,7 @@
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
   <!--Main CSS File -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <link href="assets/css/style.css" rel="stylesheet">
 
 </head>
@@ -41,22 +52,22 @@
 <body>
 
   <!-- ======= Header ======= -->
+  </div class="enquiry form">
   <header id="header" class="header fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        <img src="assets/img/logoraza.png" class="logoimg" alt="">
+        <img src="assets/img/white.png" class="logoimg" alt="">
       </a>
 
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-
+          <li><a class=" nav-link scrollto" href="about2.html">About Us</a></li>
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
-       
-
+          <li><a class="nav-link scrollto" href="#ourclients">Our Clients</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <li><a class="getstarted scrollto" href="#contact">Get Started</a></li>
+          <li><a class="getstarted scrollto" href="#contact">Enquiry</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -67,14 +78,17 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="hero d-flex align-items-center">
 
-    <div class="container">
+    <!-- <div class="container">
       <div class="row">
         <div class="col-lg-6 d-flex flex-column justify-content-center">
-          <h1 data-aos="fade-up">11+ years in Tally software solutions, delivering quality services and customer satisfaction.</h1>
-          <h2 data-aos="fade-up" data-aos-delay="400">We provide services to our client related to software and solution</h2>
+          <h1 data-aos="fade-up">For 11+ years, we've excelled in Tally solutions, delivering quality and satisfaction. We also create engaging websites for impactful online presence.
+          </h1>
+          <h2 data-aos="fade-up" data-aos-delay="400">We provide services to our client related to software and solution
+          </h2>
           <div data-aos="fade-up" data-aos-delay="600">
             <div class="text-center text-lg-start">
-              <a href="#contact" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+              <a href="#contact"
+                class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
                 <span>Get Started</span>
                 <i class="bi bi-arrow-right"></i>
               </a>
@@ -85,9 +99,114 @@
           <img src="assets/img/hero-img.png" id="headimg" class="img-fluid" alt="">
         </div>
       </div>
+    </div> -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./assets/img/5.png" alt="img">
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/img/2.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/img/6.png" alt="">
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
     </div>
 
+
   </section><!-- End Hero -->
+  <div class="container">
+    <div class="row ">
+      <div class="col-md-6 mx-auto">
+        <div class="sidebar-form">
+          <div class="call-action">
+            <span>Enquiry</span>
+          </div>
+          <h3>Enquiry</h3>
+
+          <form action="" id="pop-form">
+            <div class="form-group">
+              <label for="your-name">Your Name</label>
+              <!-- <input type="text" id="full-name" class="form-control" name="name" required>
+              <input type="text" name="name" class="form-control"  id="name">
+              <span id="full-name-error" style="display: none;"  class="error-message">Please Enter your Name*</span> -->
+              <input type="text" name="name" class="form-control" id="pop-name"
+                onfocus="checkEmptyfieldpop();checkallfield()" onblur="checkallfield()" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <!-- <input type="email" id="email" class="form-control" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+              <span id="email-error" style="display: none;" class="error-message">Please Enter valid email Address*</span> -->
+              <input type="email" class="form-control" name="email" id="pop-email"
+                onfocus="checkEmptyfieldpop();checkallfield()" onblur="checkallfield()" required
+                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]">
+            </div>
+            <div class="form-group">
+              <label for="phone">Contact Number</label>
+              <!-- <input type="number" id="phone" class="form-control" required>
+              <span id="phone-error" style="display: none;" class="error-message">Please Enter Valid Contact Number*</span> -->
+              <input type="number" class="form-control" name="pop-number" id="pop-number" onfocus="checkEmptyfieldpop()"
+                onblur="checkallfieldpop()" required>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <!-- <input type="text" id="subject" class="form-control" required>
+              <span id="subject-error" style="display: none;" class="error-message">Please Enter your Subject*</span> -->
+              <input type="text" class="form-control" name="subject" id="pop-subject"
+                onfocus="checkEmptyfieldpop();checkallfieldpop()" onblur="checkallfieldpop()" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <!-- <textarea name="textarea" id="message" cols="10" rows="5"></textarea> -->
+              <textarea class="form-control" name="message" rows="6" id="pop-message"
+                onfocus="checkEmptyfieldpop();checkallfieldpop()" onblur="checkallfieldpop()"></textarea>
+            </div>
+            <div class="enquiry-button">
+              <!-- <input type="submit" value="Send Enquiry" id="submit-btn" class="btn btn-primary"> -->
+              <button onclick="submitpop()" id="submit-btn" class="btn btn-dark">Submit</button>
+              <input type="button" value="Cancel" id="cancel-btn" class="btn btn-secondary">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="sidebar-form">
+    <div class="call-action">
+      <span>Enquiry Form</span>
+    </div>
+    <h3>Enquiry Form</h3>
+
+    <form action="">
+      <div class="form-group">
+        <label for="">Full Name</label>
+        <input type="text" name="" id="" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="">Email</label>
+        <input type="Email" name="" id="" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="">Phone No</label>
+        <input type="number" name="" id="" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="">Subject</label>
+        <input type="text" name="" id="" class="form-control">
+      </div>
+      <div class="enquiry-button">
+        <input type="submit" value="Send Enquiry" id="submit-btn">
+        <input type="button" value="Cancel" id="cancel-btn">
+      </div>
+    </form>
+  </div> -->
+
+
+
 
   <main id="main">
     <!-- ======= About Section ======= -->
@@ -108,106 +227,134 @@
         <header class="section-header">
           <h2>Services</h2>
         </header>
-
-        
-
-        <div class="row gy-4">
+          <div class="row gy-4">
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-box blue">
+            <!-- <a href="https://www.youtube.com/" target="_blank"> -->
+            <div class="service-box blue" onclick="window.location.href='./web2.html'">
               <i class="ri-discuss-line icon"></i>
               <h3>Web Design & Development</h3>
-              <p>Improves your Website</p>
-              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+              <p>Improves your Website.</p>
+              <a href="web2.html" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
             </div>
+            <!-- </a>   -->
           </div>
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
             <div class="service-box green">
               <i class="ri-discuss-line icon"></i>
               <h3>Application Development</h3>
-              <p>Grow your Bussiness by your own App</p>
-              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+              <p>Grow your Bussiness by your own App.</p>
+              <a href="#contact" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-box blue">
+            <div class="service-box red" onclick="window.location.href='./tally2.html'">
               <i class="ri-discuss-line icon"></i>
-              <h3>Dynamic Import Tool</h3>
-              <p>It imports any excel master or vouchers in Tally Data Easily</p>
-              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+              <h3>Tally Modules</h3>
+              <p>Tally customize modules.</p>
+              <a href="tally2.html" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-box orange">
-              <i class="ri-discuss-line icon"></i>
-              <h3>Dynamic Import Tool(MySQL)</h3>
-              <p>Import Vouchers and master from MySQL database</p>
-              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-box green">
-              <i class="ri-discuss-line icon"></i>
-              <h3>Advance Digital Signature</h3>
-              <p>Its digitally Signs your invoice and send email to your client with green tick</p>
-              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-box red">
-              <i class="ri-discuss-line icon"></i>
-              <h3>Email Invoice with External Attachment</h3>
-              <p>Whatever Attachment pdf,excel and word doc etc.
-
-              </p>
-              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-box purple">
-              <i class="ri-discuss-line icon"></i>
-              <h3>Negative Stock Control</h3>
-              <p>Improves your stock management</p>
-              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="700">
-            <div class="service-box pink">
-              <i class="ri-discuss-line icon"></i>
-              <h3>Sales Order Alteration Control</h3>
-              <p>Improves your integrity</p>
-              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="700">
-            <div class="service-box pink">
-              <i class="ri-discuss-line icon"></i>
-              <h3>Sales Order Alteration Control</h3>
-              <p>Improves your integrity</p>
-              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-        
 
         </div>
 
       </div>
 
     </section>
+    <section>
+      <div class="exprience">
+        <div>
+          <h1> RAZA-Your Trusted Growth Partner for Web Design & Tally</h1>
+        </div>
+        <div class="exprience-img">
+          <img src="./assets/img/11_year.png" alt="">
+        </div>
+        <div class="year-exp">
+          <div class="work">
+            <div class="work-exp">
+              <i class="fa fa-star"></i>
+            </div>
+            <!-- <h3>tally</h3> -->
+            <div id="value" class="value">11</div>
+            <p>Year Of Experience</p>
+          </div>
+          <div class="work">
+            <div class="work-exp">
+              <i class="fa fa-users"></i>
+            </div>
+            <!-- <h3>tally</h3> -->
+            <div id="valuetwo" class="value">50</div>
+            <p>Employees</p>
+          </div>
+          <div class="work">
+            <div class="work-exp">
+              <i class="fa fa-heart"></i>
+            </div>
+            <!-- <h3>tally</h3> -->
+            <div id="valuethree" class="value">400</div>
+            <p>Projects</p>
+          </div>
+          <div class="work">
+            <div class="work-exp">
+              <i class="bi bi-emoji-smile-fill"></i>
+            </div>
+            </i>
+            <!-- <h3>tally</h3> -->
+            <div id="valuefour" class="value">1000</div>
+            <p>Clients</p>
+          </div>
+        </div>
+    </section>
 
 
-      
 
-    </section>End Clients Section -->
+
+    </section><!--End Clients Section -->
 
     <!-- ======= Recent Blog Posts Section ======= -->
 
     <!-- ======= Contact Section ======= -->
+    <!-- End Contact Section -->
+    <div class="client-container" id="ourclients" class="ourclients">
+      <div class="container-fluid">
+        <h3>Our Clients</h3>
+        <marquee>
+          <div class="customer-logos slider">
+            <div class="slider-client">
+              <a href="https://www.teamace.ca/" target="_blank"><img src="./assets/img/logo-1.png" alt=""></a>
+            </div>
+            <div class="slider-client">
+              <a href="https://www.sirahomz.com/" target="_blank"><img src="./assets/img/logo-2.png" alt=""></a>
+            </div>
+            <div class="slider-client">
+              <a href="https://www.jpin.co/" target="_blank"><img src="./assets/img/logo3.png" alt=""></a>
+            </div>
+            <div class="slider-client">
+              <a href="https://goldencrownglass.com/" target="_blank"><img src="./assets/img/logo4.png" alt=""></a>
+            </div>
+            <div class="slider-client">
+              <a href="https://www.shafeinc.com/" target="_blank"><img src="./assets/img/logo5.png" alt=""></a>
+            </div>
+            <div class="slider-client">
+              <a href="https://www.lacostebakery.com/" target="_blank"><img src="./assets/img/logo6.png" alt=""></a>
+            </div>
+            <div class="slider-client">
+              <a href="https://www.kashafperfumes.com/shop/" target="_blank"><img src="./assets/img/logo8.png"
+                  alt=""></a>
+            </div>
+            <div class="slider-client">
+              <a href="https://themagnawoman.com/" target="_blank"><img src="./assets/img/logo8.webp" alt=""></a>
+            </div>
+            <div class="slider-client">
+              <a href="https://suffahacademy.ca/" target="_blank"><img src="./assets/img/logo9.png" alt=""></a>
+            </div>
+        </marquee>
+        <div class="client-btn">
+          <button><a href="clients.html"><span>View more</span></a></button>
+        </div>
+      </div>
+    </div>
     <section id="contact" class="contact">
 
       <div class="container" data-aos="fade-up">
@@ -226,7 +373,8 @@
                 <div class="info-box">
                   <i class="bi bi-geo-alt"></i>
                   <h3>Address</h3>
-                  <p>B/713,Om Sai krup Society<br>Anant Kanekar Marg<br>Opp Bandra Court<br>Bandra(East)<br>Mumbai-400051</p>
+                  <p>B/713,Om Sai krupa Society<br>Anant Kanekar Marg<br>Opp Bandra
+                    Court<br>Bandra(East)<br>Mumbai-400051</p>
                 </div>
               </div>
               <div class="col-md-6 ">
@@ -240,7 +388,7 @@
                 <div class="info-box extraclass1">
                   <i class="bi bi-envelope"></i>
                   <h3>Email Us</h3>
-                  <p>razasoftech26@gmail.com</p>
+                  <p>info@razasofttech.com</p>
                 </div>
               </div>
               <div class="col-md-6">
@@ -256,41 +404,90 @@
 
           <div class="col-lg-6">
             <!-- <form> -->
-              <div class="row gy-4" id="formContainer">
+            <div class="row gy-4" id="formContainer">
 
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name...." id="name" onfocus="checkEmptyfield();checkallfield()" onblur="checkallfield()" required>
-                </div>
-
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email..." id="email" onfocus="checkEmptyfield();checkallfield()" onblur="checkallfield()" required>
-                </div>
-                <div class="col-md-12 ">
-                  <input type="text" class="form-control" min="10" max="12" name="number" placeholder="Your Contact Number.." id="number" onfocus="checkEmptyfield()" onblur="checkallfield()" required>
-                </div>
-
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" id="subject" onfocus="checkEmptyfield();checkallfield()" onblur="checkallfield()" required>
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" id="message" onfocus="checkEmptyfield();checkallfield()" onblur="checkallfield()" required></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-
-                  <button onclick="submit()" id="submitbtn" class="btn btn-primary">Send Message</button>
-                </div>
-
+              <div class="col-md-6">
+                <input type="text" name="name" class="form-control" placeholder="Your Name...." id="name"
+                  onfocus="checkEmptyfield();checkallfield()" onblur="checkallfield()" required>
               </div>
+
+              <div class="col-md-6 ">
+                <input type="email" class="form-control" name="email" placeholder="Your Email..." id="email"
+                  onfocus="checkEmptyfield();checkallfield()" onblur="checkallfield()" required>
+              </div>
+              <div class="col-md-12 ">
+                <input type="text" class="form-control" min="10" max="12" name="number"
+                  placeholder="Your Contact Number.." id="number" onfocus="checkEmptyfield()" onblur="checkallfield()"
+                  required>
+              </div>
+
+              <div class="col-md-12">
+                <input type="text" class="form-control" name="subject" placeholder="Subject" id="subject"
+                  onfocus="checkEmptyfield();checkallfield()" onblur="checkallfield()" required>
+              </div>
+
+              <div class="col-md-12">
+                <textarea class="form-control" name="message" rows="6" placeholder="Message" id="message"
+                  onfocus="checkEmptyfield();checkallfield()" onblur="checkallfield()" required></textarea>
+              </div>
+
+              <div class="col-md-12 text-center">
+
+                <button onclick="submit()" id="submitbtn" class="btn btn-dark">Submit</button>
+              </div>
+
+            </div>
 
           </div>
 
         </div>
 
       </div>
+      <!-- <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div> -->
 
-    </section><!-- End Contact Section -->
+
+    </section>
+
+    <!-- ---------------------Subscriber------------------->
+    <section>
+      <div class="subscriber">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <h1>Subscribe To Our Newsletter To Get Latest Updates & News</h1>
+              <form action="#" onsubmit="return onClickSubscribe(event)">
+                <div class="form-group">
+                  <input type="email" id="emailSubscribe" name="email" placeholder="Your Email" required>
+                  <button type="submit" id="btnSubscribe"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                  <p id="emailErrMsg" class="error-message">Please enter valid email*.</p>
+                </div>
+              </form>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.173858895901!2d72.84498197336472!3d19.056092082144406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c923ce120a5d%3A0x599d689bd33c2303!2sAmber%20Restaurant!5e0!3m2!1sen!2sin!4v1688794434612!5m2!1sen!2sin"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
 
   </main><!-- End #main -->
 
@@ -300,42 +497,79 @@
 
     <div class="footer-top">
       <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-5 col-md-12 footer-info">
+        <div class="row gy-4 ">
+          <div class="col-lg-3  col-md-12 footer-info">
+            <div class="footer-img">
+              <!-- <img src="assets/img/white.png" class="logoimg" alt=""> -->
+              <h1>ABOUT US</h1>
+            </div>
             <a href="index.html" class="logo d-flex align-items-center">
             </a>
-            <p>11+ years in Tally software solutions, delivering quality services and customer satisfaction.</p>
-            <div class="social-links mt-3">
-              <a href='https://wa.me/+919619756588' class="twitter"><i class="bi bi-whatsapp"></i></a>
-              <a  href="https://www.facebook.com/profile.php?id=100094121487776" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a  href="" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a  href="www.linkedin.com/in/sohail-shaikh-408a63282" class="linkedin"><i class="bi bi-linkedin"></i></a>
-            </div>
+            <p>For 11+ years, we've excelled in Tally solutions, delivering quality and satisfaction. We also create
+              engaging websites for impactful online presence.</p>
           </div>
-
           <div class="col-lg-2 col-6 footer-links">
-            <h4>Useful Links</h4>
+            <h4>tally</h4>
             <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#hero">Home</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#contact">Contact us</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#services">Services</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="tally2.html">Cost Control</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="tally2.html">Sales Order Alteration</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="tally2.html">Negative Stock Control</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="tally2.html">Grace Period</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="tally2.html">Order Control</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="tally2.html">Grace Period</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="tally2.html">Sms Module</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="tally2.html">Digital Signature</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="tally2.html">Auto Email Print</a></li>
             </ul>
           </div>
-
           <div class="col-lg-2 col-6 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#services">Web Development </a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#services">App Development</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#services">Product Management</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#services">Tally Modules</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="web2.html">Web Development </a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#contact">App Development</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="tally2.html">Tally Modules</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="web2.html">Static Website</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="web2.html">Dynamic Website</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="web2.html">E-commerce Website</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="web2.html">Static Page</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="web2.html">Dynamic Page</a></li>
             </ul>
           </div>
-          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-            <h4>Location</h4>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.173858895901!2d72.84498197336472!3d19.056092082144406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c923ce120a5d%3A0x599d689bd33c2303!2sAmber%20Restaurant!5e0!3m2!1sen!2sin!4v1688794434612!5m2!1sen!2sin"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="#hero">Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="about2.html">About Us</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#services">Services</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#ourclients">Our Clients</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#contact">Contact</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#contact">Enquiry</a></li>
+            </ul>
           </div>
+          <div class="col-lg-3  col-md-12 footer-contact text-md-start">
+            <h4>Get In touch</h4>
+            <p class="footer-address"><i class="bi bi-telephone"></i>+919619756588/89</p>
+            <p class="footer-address"><i class="bi bi-envelope"></i>razasofttech26@gmail.com</p>
+            <p class="footer-address"><i class="fa fa-home"></i>B/713,Om Sai krupa Society
+              Anant Kanekar Marg
+              Opp Bandra Court
+              Bandra(East)
+              Mumbai-400051</p>
+            <div class="social-links mt-3">
+              <a href='https://wa.me/+919619756588' target="_blank" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=100094121487776" target="_blank" class="facebook"><i
+                  class="bi bi-facebook"></i></a>
+              <a href="https://instagram.com/razasoftwaretechnologies?igshid=MzRlODBiNWFlZA==" target="_blank"
+                class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/raza-software-technologies-408a63282/" target="_blank"
+                class="linkedin"><i class="bi bi-linkedin"></i></a>
+              <a href='https://twitter.com/RazaSoftTech' target="_blank" class="twitter"><i
+                  class="bi bi-twitter"></i></a>
+              <a href='https://www.youtube.com/channel/UCXAypNhzAsq7-5kl6g4MuOg' target="_blank" class="youtube"><i
+                  class="bi bi-youtube"></i></a>
+            </div>
+          </div>
+
 
         </div>
       </div>
@@ -346,12 +580,23 @@
         &copy; Copyright <strong><span>Raza Software & Technologies</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
-        Designed & Develope by <a href="https://www.linkedin.com/in/shaikhjaffar/">Jaffar Shaikh</a>
+        Designed & Develope by <a href="https://www.linkedin.com/in/raza-software-technologies-408a63282/">Raza
+          Software
+          & Technologies</a>
       </div>
     </div>
   </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="https://wa.me/+919619756588" class="back-to-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+
+  <!-- ------ swiper js----- -->
+
+
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -362,9 +607,123 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
+  <script src="assets/js/main.js?2"></script>
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $(".call-action, #cancel-btn").click(function () {
+        $(".sidebar-form").toggleClass("show");
+      })
+    });
 
+    function animateValue(obj, start, end, duration) {
+      let startTimestamp = null;
+      const step = (timestamp) => {
+        if (!startTimestamp) startTimestamp = timestamp;
+        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+        obj.innerHTML = Math.floor(progress * (end - start) + start);
+        if (progress < 1) { // Check if the animation is not finished
+          window.requestAnimationFrame(step);
+        }
+      };
+      window.requestAnimationFrame(step);
+    }
+
+    // const obj = document.getElementById("value");
+    // animateValue(obj, 0, 11, 5000); // Start from 0 and end at 100
+
+
+    // function animateValueTwo(obj, start, end, duration) {
+    //   let startTimestamp = null;
+    //   const step = (timestamp) => {
+    //     if (!startTimestamp) startTimestamp = timestamp;
+    //     const progresstwo = Math.min((timestamp - startTimestamp) / duration, 1);
+    //     obj.innerHTML = Math.floor(progresstwo * (end - start) + start); // Use obj here
+    //     if (progresstwo < 1) { // Check if the animation is not finished
+    //       window.requestAnimationFrame(step);
+    //     }
+    //   };
+    //   window.requestAnimationFrame(step);
+    // }
+
+    // const objtwo = document.getElementById("valuetwo"); // Use objtwo for the second element
+    // animateValueTwo(objtwo, 0, 15, 5000); // Start from 0 and end at 100 for "valuetwo"
+
+
+    // function animateValueThree(obj, start, end, duration) {
+    //   let startTimestamp = null;
+    //   const step = (timestamp) => {
+    //     if (!startTimestamp) startTimestamp = timestamp;
+    //     const progressthree = Math.min((timestamp - startTimestamp) / duration, 1);
+    //     obj.innerHTML = Math.floor(progressthree * (end - start) + start); // Use obj here
+    //     if (progressthree < 1) { // Check if the animation is not finished
+    //       window.requestAnimationFrame(step);
+    //     }
+    //   };
+    //   window.requestAnimationFrame(step);
+    // }
+
+    // const objthree = document.getElementById("valuethree"); // Use objtwo for the second element
+    // animateValueThree(objthree, 0, 389, 5000);
+
+
+    // function animateValueFour(obj, start, end, duration) {
+    //   let startTimestamp = null;
+    //   const step = (timestamp) => {
+    //     if (!startTimestamp) startTimestamp = timestamp;
+    //     const progressfour = Math.min((timestamp - startTimestamp) / duration, 1);
+    //     obj.innerHTML = Math.floor(progressfour * (end - start) + start); // Use obj here
+    //     if (progressfour < 1) { // Check if the animation is not finished
+    //       window.requestAnimationFrame(step);
+    //     }
+    //   };
+    //   window.requestAnimationFrame(step);
+    // }
+
+    // const objfour = document.getElementById("valuefour"); // Use objtwo for the second element
+    // animateValueFour(objfour, 0, 835, 5000);
+
+    // // ------start-Subscribe-js-----
+
+    // function onClickSubscribe() {
+    //   event.preventDefault(); // Prevent the default form submission behavior
+
+    //   var emailInput = document.getElementById("emailSubscribe");
+    //   var errorMessage = document.getElementById("emailErrMsg");
+
+    //   if (!isValidEmailpop(emailInput.value)) {
+    //     errorMessage.style.visibility = "visible";
+    //     emailInput.classList.add("error-input");
+    //   } else {
+    //     errorMessage.style.visibility = "hidden";
+    //     emailInput.classList.remove("error-input");
+    //   }
+    // }
+
+    // function isValidEmailpop(email) {
+    //   var emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+    //   return emailRegex.test(email);
+    // }
+
+  </script>
 </body>
 
 </html>

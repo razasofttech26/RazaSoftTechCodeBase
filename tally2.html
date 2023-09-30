@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("fGfjewSmp91sJ885u");
+    })();
+  </script>
+  <title>RAZA SOFTECH</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.jpeg" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:
+  300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="sweetalert2.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <!--Main CSS File -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link href="assets/css/style.css" rel="stylesheet">
+<style>
+  .tally-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin: 9.5rem 15px 4rem 15px;
+
+    }
+
+    .pricing-option {
+      padding: 50px 30px 30px;
+      width: 20vw;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #f1f1f1;
+      border-bottom: 3px solid black;
+    }
+
+    /* .pricing-container {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    } */
+
+    .pricing-option h2 {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .pricing-list h3 {
+      font-size: 19px;
+      font-weight: 600;
+    }
+
+    .pricing-list p {
+      font-size: 19px;
+    }
+
+    .pricing-option.three {
+      padding: 26px 23px 30px;
+    }
+
+    .pricing-option.four {
+      padding: 50px 16px 30px;
+    }
+
+    .pricing-option.five {
+      padding: 37px 30px 17px 30px;
+    }
+
+    .pricing-option.six {
+      padding: 70px 30px 30px 30px;
+    }
+
+    button.btn.btn-outline-secondary {
+      display: none;
+    }
+    @media only screen and (max-width: 1024px) {
+      .pricing-option {
+        width: 26vw;
+      }
+    }
+
+    @media only screen and (max-width: 768px) {
+      .pricing-option {
+        width: 45vw;
+      }
+    }
+
+    @media only screen and (max-width: 600px) {
+      .pricing-option {
+        width: 100%;
+      }
+
+      .pricing-container {
+        margin: 0px 21px;
+      }
+    }
+</style>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/white.png" class="logoimg" alt="">
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+          <li><a class=" nav-link scrollto" href="about2.html">About Us</a></li>
+          <li><a class="nav-link scrollto" href="index.html#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="#ourclients">Our Clients</a></li>
+          <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
+          <li><a class="getstarted scrollto" href="index.html#contact">Enquiry</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+  <div class="tally-container">
+    <!-- <div class="pricing-container"> -->
+      <div class="pricing-option three">
+        <h2>OUTSTANDING AUTO REMINDER </h2>
+        <br>
+        <div class="pricing-list">
+          <h3> CUSTOMER PRICE</h3>
+          <p class="price">₹6500</p>
+          <h3> YEARLY PRICE</h3>
+          <p class="price">₹2499</p>
+          <a href=""> <button type="button" class="btn btn-outline-secondary">CLICK HERE</button> </a>
+        </div>
+      </div>
+      <div class="pricing-option">
+        <h2>COST CONTROL</h2>
+        <br>
+        <div class="pricing-list">
+          <h3> CUSTOMER PRICE</h3>
+          <p class="price">₹3900</p>
+          <h3> YEARLY PRICE</h3>
+          <p class="price">₹1499</p>
+          <a href=""> <button type="button" class="btn btn-outline-secondary">CLICK HERE</button> </a>
+        </div>
+      </div>
+      <div class="pricing-option three">
+        <h2>RUNNING BALANCE IN SALES ENTRY</h2>
+        <br>
+        <div class="pricing-list">
+          <h3> CUSTOMER PRICE</h3>
+          <p class="price">₹3900</p>
+          <h3> YEARLY PRICE</h3>
+          <p class="price">₹1499</p>
+          <a href=""><button type="button" class="btn btn-outline-secondary">CLICK HERE</button></a>
+        </div>
+      </div>
+      <div class="pricing-option">
+        <h2>SALES ORDER ALTERATION </h2>
+        <br>
+        <div class="pricing-list">
+          <h3> CUSTOMER PRICE</h3>
+          <p class="price">₹6500</p>
+          <h3> YEARLY PRICE</h3>
+          <p class="price">₹2499</p>
+          <a href=""> <button type="button" class="btn btn-outline-secondary">CLICK HERE</button> </a>
+        </div>
+      </div>
+    <!-- </div> -->
+    <!-- <div class="pricing-container"> -->
+      <div class="pricing-option">
+        <h2>NEGATIVE STOCK CONTROL </h2>
+        <br>
+        <div class="pricing-list">
+          <h3> CUSTOMER PRICE</h3>
+          <p class="price">₹6500</p>
+          <h3> YEARLY PRICE</h3>
+          <p class="price">₹2499</p>
+          <a href=""> <button type="button" class="btn btn-outline-secondary">CLICK HERE</button> </a>
+        </div>
+      </div>
+      <div class="pricing-option">
+        <h2>ORDER CONTROL </h2>
+        <br>
+        <div class="pricing-list">
+          <h3> CUSTOMER PRICE</h3>
+          <p class="price">₹7800</p>
+          <h3> YEARLY PRICE</h3>
+          <p class="price">₹2499</p>
+          <a href=""> <button type="button" class="btn btn-outline-secondary">CLICK HERE</button> </a>
+        </div>
+      </div>
+      <div class="pricing-option">
+        <h2>GRACE PERIOD </h2>
+        <br>
+        <div class="pricing-list">
+          <h3> CUSTOMER PRICE</h3>
+          <p class="price">₹2600</p>
+          <h3> YEARLY PRICE</h3>
+          <p class="price">₹999</p>
+          <a href=""> <button type="button" class="btn btn-outline-secondary">CLICK HERE</button> </a>
+        </div>
+      </div>
+      <div class="pricing-option">
+        <h2>AUTO MANUAL NUMBERING </h2>
+        <br>
+        <div class="pricing-list">
+          <h3> CUSTOMER PRICE</h3>
+          <p class="price">₹3900</p>
+          <h3> YEARLY PRICE</h3>
+          <p class="price">₹1499</p>
+          <a href=""> <button type="button" class="btn btn-outline-secondary">CLICK HERE</button> </a>
+        </div>
+      </div>
+    <!-- </div> -->
+    <!-- <div class="pricing-container"> -->
+      <div class="pricing-option">
+        <h2>SMS MODULE </h2>
+        <br>
+        <div class="pricing-list">
+          <h3> CUSTOMER PRICE</h3>
+          <p class="price">₹13000</p>
+          <h3> YEARLY PRICE</h3>
+          <p class="price">₹4999</p>
+          <a href=""> <button type="button" class="btn btn-outline-secondary">CLICK HERE</button> </a>
+        </div>
+      </div>
+      <div class="pricing-option three">
+        <h2>RUNNING BALANCE IN SALES ENTRY </h2>
+        <br>
+        <div class="pricing-list">
+          <h3> CUSTOMER PRICE</h3>
+          <p class="price">₹3900</p>
+          <h3> YEARLY PRICE</h3>
+          <p class="price">₹1499</p>
+          <a href=""> <button type="button" class="btn btn-outline-secondary">CLICK HERE</button> </a>
+        </div>
+      </div>
+      <div class="pricing-option">
+        <h2>DIGITAL SIGNATURE </h2>
+        <br>
+        <div class="pricing-list">
+          <h3> CUSTOMER PRICE</h3>
+          <p class="price">₹3900</p>
+          <h3> YEARLY PRICE</h3>
+          <p class="price">₹1499</p>
+          <a href=""> <button type="button" class="btn btn-outline-secondary">CLICK HERE</button> </a>
+        </div>
+      </div>
+      <div class="pricing-option">
+        <h2>AUTO EMAIL PRINT </h2>
+        <br>
+        <div class="pricing-list">
+          <h3> CUSTOMER PRICE</h3>
+          <p class="price">₹13000</p>
+          <h3> YEARLY PRICE</h3>
+          <p class="price">₹4999</p>
+          <a href=""> <button type="button" class="btn btn-outline-secondary">CLICK HERE</button> </a>
+        </div>
+      </div>
+    <!-- </div> -->
+    <!-- <div class="pricing-container"> -->
+      <div class="pricing-option">
+        <h2>CRM</h2>
+        <br>
+        <div class="pricing-list">
+          <h3> CUSTOMER PRICE</h3>
+          <p class="price">₹13000</p>
+          <h3> YEARLY PRICE</h3>
+          <p class="price">₹4999</p>
+          <a href=""> <button type="button" class="btn btn-outline-secondary">CLICK HERE</button> </a>
+        </div>
+      </div>
+      <div class="pricing-option three">
+        <h2>DYNAMIC VOUCHER IMPORT MODULE </h2>
+        <br>
+        <div class="pricing-list">
+          <h3> CUSTOMER PRICE</h3>
+          <p class="price">₹5200</p>
+          <h3> YEARLY PRICE</h3>
+          <p class="price">₹1999</p>
+          <a href=""> <button type="button" class="btn btn-outline-secondary">CLICK HERE</button> </a>
+        </div>
+      </div>
+      <div class="pricing-option">
+        <h2>DYNAMIC MASTER IMPORT </h2>
+        <br>
+        <div class="pricing-list">
+          <h3> CUSTOMER PRICE</h3>
+          <p class="price">₹6500</p>
+          <h3> YEARLY PRICE</h3>
+          <p class="price">₹2499</p>
+          <a href=""> <button type="button" class="btn btn-outline-secondary">CLICK HERE</button> </a>
+        </div>
+      </div>
+      <div class="pricing-option four">
+        <h2>BARCODE & LABEL PRINTING </h2>
+        <br>
+        <div class="pricing-list">
+          <h3> CUSTOMER PRICE</h3>
+          <p class="price">₹6500</p>
+          <h3> YEARLY PRICE</h3>
+          <p class="price">₹2499</p>
+          <a href=""> <button type="button" class="btn btn-outline-secondary">CLICK HERE</button> </a>
+        </div>
+      </div>
+    <!-- </div> -->
+    <!-- <div class="pricing-container"> -->
+      <div class="pricing-option">
+        <h2>SECURITY CONTROL </h2>
+        <br>
+        <div class="pricing-list">
+          <h3> CUSTOMER PRICE</h3>
+          <p class="price">₹10400</p>
+          <h3> YEARLY PRICE</h3>
+          <p class="price">₹3999</p>
+          <a href=""> <button type="button" class="btn btn-outline-secondary">CLICK HERE</button> </a>
+        </div>
+      </div>
+      <div class="pricing-option">
+        <h2>AUTORIZATION MODULE </h2>
+        <br>
+        <div class="pricing-list">
+          <h3> CUSTOMER PRICE</h3>
+          <p class="price">₹7800</p>
+          <h3> YEARLY PRICE</h3>
+          <p class="price">₹2999</p>
+          <a href=""> <button type="button" class="btn btn-outline-secondary">CLICK HERE</button> </a>
+        </div>
+      </div>
+      <div class="pricing-option">
+        <h2>AUTO BACKUP </h2>
+        <br>
+        <div class="pricing-list">
+          <h3> CUSTOMER PRICE</h3>
+          <p class="price">₹3900</p>
+          <h3> YEARLY PRICE</h3>
+          <p class="price">₹1499</p>
+          <a href=""> <button type="button" class="btn btn-outline-secondary">CLICK HERE</button> </a>
+        </div>
+      </div>
+      <div class="pricing-option">
+        <h2>ADVANCE AUTO BACKUP </h2>
+        <br>
+        <div class="pricing-list">
+          <h3> CUSTOMER PRICE</h3>
+          <p class="price">₹6500</p>
+          <h3> YEARLY PRICE</h3>
+          <p class="price">₹2499</p>
+          <a href=""> <button type="button" class="btn btn-outline-secondary">CLICK HERE</button> </a>
+        </div>
+      </div>
+    <!-- </div> -->
+    <!-- <div class="pricing-container"> -->
+      <div class="pricing-option">
+        <h2>IMEI MODULE </h2>
+        <br>
+        <div class="pricing-list">
+          <h3> CUSTOMER PRICE</h3>
+          <p class="price">₹7150</p>
+          <h3> YEARLY PRICE</h3>
+          <p class="price">₹2450</p>
+          <a href=""> <button type="button" class="btn btn-outline-secondary">CLICK HERE</button> </a>
+        </div>
+      </div>
+      <div class="pricing-option">
+        <h2>ENVELOPE PRINTING </h2>
+        <br>
+        <div class="pricing-list">
+          <h3> CUSTOMER PRICE</h3>
+          <p class="price">₹1300</p>
+          <h3> YEARLY PRICE</h3>
+          <p class="price">₹499</p>
+          <a href=""> <button type="button" class="btn btn-outline-secondary">CLICK HERE</button> </a>
+        </div>
+      </div>
+      <div class="pricing-option">
+        <h2>PARTY PREVIOUS BALANCE </h2>
+        <br>
+        <div class="pricing-list">
+          <h3> CUSTOMER PRICE</h3>
+          <p class="price">₹1300</p>
+          <h3> YEARLY PRICE</h3>
+          <p class="price">₹499</p>
+          <a href=""> <button type="button" class="btn btn-outline-secondary">CLICK HERE</button> </a>
+        </div>
+      </div>
+      <div class="pricing-option five">
+        <h2>PRODUCT IMAGE IN INVOICE MULTI PAGE </h2>
+        <br>
+        <div class="pricing-list">
+          <h3> CUSTOMER PRICE</h3>
+          <p class="price">₹6500</p>
+          <h3> YEARLY PRICE</h3>
+          <p class="price">₹2499</p>
+          <a href=""> <button type="button" class="btn btn-outline-secondary">CLICK HERE</button> </a>
+        </div>
+      </div>
+    <!-- </div> -->
+    <!-- <div class="pricing-container"> -->
+      <div class="pricing-option six">
+        <h2>ALL INVOICE FORMAT </h2>
+        <br>
+        <div class="pricing-list">
+          <h3> CUSTOMER PRICE</h3>
+          <p class="price">₹6500</p>
+          <h3> YEARLY PRICE</h3>
+          <p class="price">₹2499</p>
+          <a href=""> <button type="button" class="btn btn-outline-secondary">CLICK HERE</button> </a>
+        </div>
+      </div>
+      <div class="pricing-option">
+        <h2>QR CODE IN DEFAULT INVOICE </h2>
+        <br>
+        <div class="pricing-list">
+          <h3> CUSTOMER PRICE</h3>
+          <p class="price">₹3900</p>
+          <h3> YEARLY PRICE</h3>
+          <p class="price">₹1499</p>
+          <a href=""> <button type="button" class="btn btn-outline-secondary">CLICK HERE</button> </a>
+        </div>
+      </div>
+      <div class="pricing-option">
+        <h2>MULTI DOCUMENT ATTACHMENT </h2>
+        <br>
+        <div class="pricing-list">
+          <h3> CUSTOMER PRICE</h3>
+          <p class="price">₹6500</p>
+          <h3> YEARLY PRICE</h3>
+          <p class="price">₹2499</p>
+          <a href=""> <button type="button" class="btn btn-outline-secondary">CLICK HERE</button> </a>
+        </div>
+      </div>
+      <div class="pricing-option">
+        <h2>TALLY GENERATE AUTO INVOICE </h2>
+        <br>
+        <div class="pricing-list">
+          <h3> CUSTOMER PRICE</h3>
+          <p class="price">₹5200</p>
+          <h3> YEARLY PRICE</h3>
+          <p class="price">₹1999</p>
+          <a href=""> <button type="button" class="btn btn-outline-secondary">CLICK HERE</button> </a>
+        </div>
+      </div>
+    <!-- </div> -->
+    <!-- <div class="pricing-container"> -->
+
+      <div class="pricing-option">
+        <h2>TALLY MINI </h2>
+        <br>
+        <div class="pricing-list">
+          <h3> CUSTOMER PRICE</h3>
+          <p class="price">₹3900</p>
+          <h3> YEARLY PRICE</h3>
+          <p class="price">₹1499</p>
+          <a href=""> <button type="button" class="btn btn-outline-secondary">CLICK HERE</button> </a>
+        </div>
+      </div>
+      <div class="pricing-option">
+        <h2>STOCK TRANSFER </h2>
+        <br>
+        <div class="pricing-list">
+          <h3> CUSTOMER PRICE</h3>
+          <p class="price">₹5200</p>
+          <h3> YEARLY PRICE</h3>
+          <p class="price">₹1999</p>
+          <a href=""> <button type="button" class="btn btn-outline-secondary">CLICK HERE</button> </a>
+        </div>
+      </div>
+      <div class="pricing-option">
+        <h2>BROKER MODULE </h2>
+        <br>
+        <div class="pricing-list">
+          <h3> CUSTOMER PRICE</h3>
+          <p class="price">₹11700</p>
+          <h3> YEARLY PRICE</h3>
+          <p class="price">₹4999</p>
+          <a href=""> <button type="button" class="btn btn-outline-secondary">CLICK HERE</button> </a>
+        </div>
+      </div>
+      <div class="pricing-option">
+        <h2>SALESMAN MODULE </h2>
+        <br>
+        <div class="pricing-list">
+          <h3> CUSTOMER PRICE</h3>
+          <p class="price">₹6500</p>
+          <h3> YEARLY PRICE</h3>
+          <p class="price">₹2499</p>
+          <a href=""> <button type="button" class="btn btn-outline-secondary">CLICK HERE</button> </a>
+        </div>
+      </div>
+    </div>
+
+ <!-- ======= Footer ======= -->
+ <footer id="footer" class="footer">
+
+
+  <div class="footer-top">
+    <div class="container ">
+      <div class="row gy-4 ">
+        <div class="col-lg-5  col-md-12 footer-info">
+          <div class="footer-img">
+            <!-- <img src="assets/img/white.png" class="logoimg" alt=""> -->
+            <h1>ABOUT US</h1>
+          </div>
+          <a href="index.html" class="logo d-flex align-items-center">
+          </a>
+          <p>For 11+ years, we've excelled in Tally solutions, delivering quality and satisfaction. We also create
+            engaging websites for impactful online presence.</p>
+        </div>
+        <div class="col-lg-2 col-6 footer-links">
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="tally2.html">Cost Control</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="tally2.html">Sales Order Alteration</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="tally2.html">Negative Stock Control</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="tally2.html">Grace Period</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="tally2.html">Order Control</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="tally2.html">Grace Period</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="tally2.html">Sms Module</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="tally2.html">Digital Signature</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="tally2.html">Auto Email Print</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2  col-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="web2.html">Web Development </a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#contact">App Development</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="tally2.html">Tally Modules</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="web2.html">Static Website</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="web2.html">Dynamic Website</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="web2.html">E-commerce Website</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="web2.html">Static Page</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="web2.html">Dynamic Page</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="index.html#hero">Home</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="about2.html">About Us</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="index.html#services">Services</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="index.html#ourclients">Our Clients</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="index.html#contact">Contact</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="index.html#contact">Enquiry</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3  col-md-12 footer-contact text-md-start">
+          <h4>Get In touch</h4>
+          <p class="footer-address"><i class="bi bi-telephone"></i>+919619756588/89</p>
+          <p class="footer-address"><i class="bi bi-envelope"></i>razasofttech26@gmail.com</p>
+          <p class="footer-address"><i class="fa fa-home"></i>B/713,Om Sai krupa Society
+            Anant Kanekar Marg
+            Opp Bandra Court
+            Bandra(East)
+            Mumbai-400051</p>
+          <div class="social-links mt-3">
+            <a href='https://wa.me/+919619756588' target="_blank" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100094121487776" target="_blank" class="facebook"><i
+                class="bi bi-facebook"></i></a>
+            <a href="https://instagram.com/razasoftwaretechnologies?igshid=MzRlODBiNWFlZA==" target="_blank"
+              class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/raza-software-technologies-408a63282/" target="_blank"
+              class="linkedin"><i class="bi bi-linkedin"></i></a>
+            <a href='https://twitter.com/RazaSoftTech' target="_blank" class="twitter"><i
+                class="bi bi-twitter"></i></a>
+            <a href='https://www.youtube.com/channel/UCXAypNhzAsq7-5kl6g4MuOg' target="_blank" class="youtube"><i
+                class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="copyright">
+      &copy; Copyright <strong><span>Raza Software & Technologies</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      Designed & Develope by <a href="https://www.linkedin.com/in/raza-software-technologies-408a63282/">Raza
+        Software
+        & Technologies</a>
+    </div>
+  </div>
+</footer><!-- End Footer -->
+
+<a href="https://wa.me/+919619756588" class="back-to-top d-flex align-items-center justify-content-center">
+  <i class="bi bi-whatsapp"></i>
+</a>
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+    class="bi bi-arrow-up-short"></i></a>
+
+
+<!-- ------ swiper js----- -->
+
+
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <!-- <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script> -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

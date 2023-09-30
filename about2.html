@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("fGfjewSmp91sJ885u");
+    })();
+  </script>
+  <title>RAZA SOFTECH</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.jpeg" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:
+  300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="sweetalert2.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <!--Main CSS File -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+    .about-container {
+      margin-top: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 39px;
+      padding: 5px 69px;
+      /* flex-wrap: wrap; */
+    }
+
+
+
+    /* .about-container .img img {
+      border-radius: 20%;
+      height: 60vh;
+    } */
+    .about-container .img img {
+      border-radius: 9%;
+      box-shadow: 0px 0px 4px;
+      height: 63vh;
+    }
+
+    .contain {
+      width: 60%;
+      padding: 33px 0px;
+      border-radius: 36px;
+    }
+
+    .contain p {
+      font-size: 17px;
+      line-height: 25px;
+      text-align: justify;
+      color: #6d6a6a;
+    }
+
+    .about-us-heading {
+      text-align: center;
+    }
+
+    .about-img2 {
+      height: 65vh !important;
+    }
+
+    .about-us-heading h1 {
+      margin-top: 8rem;
+      font-size: 38px;
+      font-weight: 700;
+      border-bottom: 2px solid #262323;
+      font-family: ui-sans-serif;
+      letter-spacing: 2px;
+      display: inline-block;
+      color: #262323;
+    }
+
+    .contain h1 {
+      font-weight: bold;
+      color: #262323;
+    }
+
+    .team-main {
+      margin: 20px 0px 0px;
+      background: #f2f2f3;
+    }
+
+    .team {
+      text-align: center;
+      font-weight: bold;
+      letter-spacing: 2px;
+      color: #333;
+      padding-bottom: 60px;
+      background: #f2f2f3;
+      ;
+    }
+
+    .team h1 {
+      font-size: 38px;
+      font-weight: 700;
+      font-family: ui-sans-serif;
+    }
+
+    .team h1:after {
+      content: '';
+      background-color: #333;
+      display: block;
+      height: 2px;
+      width: 170px;
+      margin: 3px auto;
+    }
+
+    .profile {
+      margin-top: 25px;
+    }
+
+    .profile .img-box {
+      box-shadow: 2px 0px 9px rgba(0, 0, 0, 0.6);
+      opacity: 1;
+      display: block;
+      position: relative;
+      border-radius: 22px;
+    }
+
+    .profile h2 {
+      font-size: 22px;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+
+    .profile h3 {
+      font-size: 15px;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+
+    .img-box:after {
+      content: '';
+      opacity: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      position: absolute;
+      right: 0;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      border-radius: 22px;
+    }
+
+    .img-box ul {
+      margin: 0;
+      padding: 20px 0;
+      position: absolute;
+      z-index: 1;
+      bottom: 0;
+      display: block;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0;
+    }
+
+    .img-box ul li {
+      width: 30px;
+      height: 30px;
+      border: 1px solid #fff;
+      border-radius: 50%;
+      margin: 2px;
+      display: inline-block;
+    }
+
+    .img-box img {
+      height: auto;
+      width: 100%;
+      border-radius: 22px;
+    }
+
+    .img-box a {
+      color: #fff;
+      font-size: 18.5px;
+    }
+
+    .img-box:hover:after {
+      opacity: 1;
+    }
+
+    .img-box:hover ul {
+      opacity: 1;
+    }
+
+    .img-box a:hover li {
+      color: #fff;
+      border: 1px solid #fff;
+    }
+
+    .img-box:after,
+    .img-box ul,
+    .img-box ul li {
+      transition: all 0.5s ease-in-out 0s;
+    }
+
+
+    @media only screen and (max-width: 1120px) {
+      .about-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 2px 20px;
+
+      }
+
+      .contain {
+        width: 100%;
+      }
+      .about-top {
+        flex-direction: column-reverse !important;
+      }
+      .about-container .img img {
+        height:auto !important;
+        width: 100%;
+      }
+    }
+
+    @media only screen and (max-width: 768px) {
+      .about-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 7px;
+        padding-bottom: 20px;
+      }
+
+      .contain {
+        width: 100%;
+      }
+
+      .contain p {
+        text-align: inherit;
+      }
+    }
+
+    @media only screen and (max-width: 480px) {
+      .contain {
+        padding: 5px;
+      }
+
+      .about-container .img img {
+        height:auto !important;
+        width: 100%;
+      }
+
+      .profile .img-box {
+        margin: 0px 17px;
+      }
+
+    }
+
+    @media only screen and (max-width: 320px) {
+      .contain {
+        padding: 5px;
+      }
+
+      .about-container .img img {
+        height: auto;
+        width: 100%;
+        /* padding: 13px; */
+      }
+
+      .profile .img-box {
+        margin: 0px 17px;
+      }
+
+      .about-top {
+        flex-direction: column-reverse !important;
+      }
+    }
+
+
+    /* Start Team css */
+
+    /* .col-sm img {
+    height: auto;
+    width: 100%;
+    text-align: center;
+}
+.col-sm {
+    border: 1px solid black;
+    margin: 1rem;
+}
+.container.team-main {
+    margin-bottom: 4rem;
+} */
+  </style>
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/white.png" class="logoimg" alt="">
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+          <li><a class=" nav-link scrollto" href="about2.html">About Us</a></li>
+          <li><a class="nav-link scrollto" href="index.html#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="index.html#ourclients">Our Clients</a></li>
+          <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
+          <li><a class="getstarted scrollto" href="index.html#contact">Enquiry</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <div class="about-us-heading">
+
+    <h1>About Us</h1>
+  </div>
+  <div class="container-fluid">
+    <div class="about-container-main">
+      <div class="about-container about-top">
+        <div class="contain">
+          <h1>Tally & Software Technology Company</h1>
+          <p>More than 11 years of experience in the IT Software Industry.
+            Our motto is to provide solutions and service to our clients. Bringing new solutions with latest
+            technologies in Tally Software Solutions and other technology Software for various industries -
+            be it manufacturers, traders, retailers, consultants, CAs, Tax Consultants, individual enterpreneur,
+            SME, MSME, Domestic Corporates or International Corporates, NGOs, Various Associations of
+            Professionals helping in improving their efficiencies & their business processes.</p>
+            
+            <p>We are into Software Development, Maintenance, Solutions, Licensed Softwares, Tally user training ,
+              AMC ,Support , BizAnalyst - Tally Mobile App, Tally Prime Software Integration with any other software
+              or databases.
+              
+              We are providing services as well as advanced level of customisation in Tally for any requirements
+              outside the provisions of default Tally Features to our esteemed clients.Also we have many ready
+              solutions in Tally Software for any industries that can be implemented and ready to use.
+              
+              Please feel free to call me for any query that you may have.
+              
+              We look forward to providing you Support & Services in any of the other above areas.</p>
+            </div>
+            <div class="img">
+              <img src="./assets/img/about-img3.jpg" alt="" class="about-img2">
+            </div>
+          </div>
+        </div>
+    <!-- <div class="about-container-main">
+      <div class="about-container">
+        <div class="img">
+          <img src="./assets/img/about-img2.jpg" alt="">
+        </div>
+        <div class="contain">
+          <h1>Tally & Software Technology Company</h1>
+          <p>More than 11 years of experience in the IT Software Industry.
+            Our motto is to provide solutions and service to our clients. Bringing new solutions with latest
+            technologies in Tally Software Solutions and other technology Software for various industries -
+            be it manufacturers, traders, retailers, consultants, CAs, Tax Consultants, individual enterpreneur,
+            SME, MSME, Domestic Corporates or International Corporates, NGOs, Various Associations of
+            Professionals helping in improving their efficiencies & their business processes.</p>
+
+          <p>We are into Software Development, Maintenance, Solutions, Licensed Softwares, Tally user training ,
+            AMC ,Support , BizAnalyst - Tally Mobile App, Tally Prime Software Integration with any other software
+            or databases.
+
+            We are providing services as well as advanced level of customisation in Tally for any requirements
+            outside the provisions of default Tally Features to our esteemed clients.Also we have many ready
+            solutions in Tally Software for any industries that can be implemented and ready to use.
+
+            Please feel free to call me for any query that you may have.
+
+            We look forward to providing you Support & Services in any of the other above areas.</p>
+        </div>
+      </div>
+    </div> -->
+  </div>
+  <section class="team-main">
+    <div class="container team ">
+      <h1>Our Team</h1>
+      <div class="row">
+        <div class="col-md-4 profile text-center">
+          <div class="img-box">
+            <img src="./assets/img/team1.png" alt="" class="img-responsive">
+            <ul>
+              <a href="#">
+                <li><i class="fa fa-facebook"></i></li>
+              </a>
+              <a href="#">
+                <li><i class="fa fa-instagram"></i></li>
+              </a>
+              <a href="#">
+                <li><i class="fa fa-linkedin"></i></li>
+              </a>
+            </ul>
+          </div>
+          <h2>Sohail Attari</h2>
+          <h3>Founder/CEO</h3>
+        </div>
+        <div class="col-md-4 profile text-center">
+          <div class="img-box">
+            <img src="./assets/img/team1.png" alt="" class="img-responsive">
+            <ul>
+              <a href="#">
+                <li><i class="fa fa-facebook"></i></li>
+              </a>
+              <a href="#">
+                <li><i class="fa fa-instagram"></i></li>
+              </a>
+              <a href="#">
+                <li><i class="fa fa-linkedin"></i></li>
+              </a>
+            </ul>
+          </div>
+          <h2>Akram Attari</h2>
+          <h3>Co-Founder/CTO</h3>
+        </div>
+        <div class="col-md-4 profile text-center">
+          <div class="img-box">
+            <img src="./assets/img/team1.png" alt="" class="img-responsive">
+            <ul>
+              <a href="#">
+                <li><i class="fa fa-facebook"></i></li>
+              </a>
+              <a href="#">
+                <li><i class="fa fa-instagram"></i></li>
+              </a>
+              <a href="#">
+                <li><i class="fa fa-linkedin"></i></li>
+              </a>
+            </ul>
+          </div>
+          <h2>Tousif Khan</h2>
+          <h3>Technical Head</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="footer-top">
+      <div class="container ">
+        <div class="row gy-4 ">
+          <div class="col-lg-5  col-md-12 footer-info">
+            <div class="footer-img">
+              <!-- <img src="assets/img/white.png" class="logoimg" alt=""> -->
+              <h1>ABOUT US</h1>
+            </div>
+            <a href="index.html" class="logo d-flex align-items-center">
+            </a>
+            <p>For 11+ years, we've excelled in Tally solutions, delivering quality and satisfaction. We also create
+              engaging websites for impactful online presence.</p>
+          </div>
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>tally</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="tally2.html">Cost Control</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="tally2.html">Sales Order Alteration</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="tally2.html">Negative Stock Control</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="tally2.html">Grace Period</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="tally2.html">Order Control</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="tally2.html">Grace Period</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="tally2.html">Sms Module</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="tally2.html">Digital Signature</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="tally2.html">Auto Email Print</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2  col-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="web2.html">Web Development </a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#contact">App Development</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="tally2.html">Tally Modules</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="web2.html">Static Website</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="web2.html">Dynamic Website</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="web2.html">E-commerce Website</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="web2.html">Static Page</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="web2.html">Dynamic Page</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="index.html#hero">Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="about2.html">About Us</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="index.html#services">Services</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="index.html#ourclients">Our Clients</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="index.html#contact">Contact</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="index.html#contact">Enquiry</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3  col-md-12 footer-contact text-md-start">
+            <h4>Get In touch</h4>
+            <p class="footer-address"><i class="bi bi-telephone"></i>+919619756588/89</p>
+            <p class="footer-address"><i class="bi bi-envelope"></i>razasofttech26@gmail.com</p>
+            <p class="footer-address"><i class="fa fa-home"></i>B/713,Om Sai krupa Society
+              Anant Kanekar Marg
+              Opp Bandra Court
+              Bandra(East)
+              Mumbai-400051</p>
+            <div class="social-links mt-3">
+              <a href='https://wa.me/+919619756588' target="_blank" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=100094121487776" target="_blank" class="facebook"><i
+                  class="bi bi-facebook"></i></a>
+              <a href="https://instagram.com/razasoftwaretechnologies?igshid=MzRlODBiNWFlZA==" target="_blank"
+                class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/raza-software-technologies-408a63282/" target="_blank"
+                class="linkedin"><i class="bi bi-linkedin"></i></a>
+              <a href='https://twitter.com/RazaSoftTech' target="_blank" class="twitter"><i
+                  class="bi bi-twitter"></i></a>
+              <a href='https://www.youtube.com/channel/UCXAypNhzAsq7-5kl6g4MuOg' target="_blank" class="youtube"><i
+                  class="bi bi-youtube"></i></a>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Raza Software & Technologies</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed & Develope by <a href="https://www.linkedin.com/in/raza-software-technologies-408a63282/">Raza
+          Software
+          & Technologies</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="https://wa.me/+919619756588" class="back-to-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+
+  <!-- ------ swiper js----- -->
+
+
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

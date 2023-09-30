@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("fGfjewSmp91sJ885u");
+        })();
+    </script>
+    <title>RAZA SOFTECH</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.jpeg" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:
+  300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!--Main CSS File -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link href="assets/css/style.css" rel="stylesheet">
+    <style>
+        .clients-container-main {
+            margin-top: 8rem;
+
+        }
+
+        .clients-container-main h1 {
+            text-align: center;
+            font-size: 4rem;
+        }
+
+        .clients-logo img {
+            /* max-width: 120px; */
+            height: auto;
+        }
+
+        img.logo-3 {
+            height: 30vh;
+        }
+
+        img.img-fluid.beauty {
+            filter: invert(40%);
+        }
+
+        .clients-logo {
+            border: 1px solid black;
+            height: 17rem;
+            width: 26%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 20px;
+            box-shadow: 3px 0px 13px #a49797;
+            border-radius: 15px;
+            padding: 3%;
+            cursor: pointer;
+            transform: translateY(0%);
+        }
+
+        .clients-logo:hover {
+            transform: translateY(-3%);
+            transition: 0.3s;
+        }
+
+        .client-logo-main {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 3rem;
+        }
+
+        img.client-logo-1 {
+            height: auto;
+            max-width: 80%;
+        }
+
+        img.client-logo-3 {
+            height: auto;
+            max-width: 26%;
+        }
+
+        img.client-logo-5 {
+            height: auto;
+            width: 100%;
+            padding: 8px;
+        }
+
+        img.client-logo-6,
+        img.client-logo-7,
+        img.client-logo-8,
+        img.client-logo-2 {
+            height: auto;
+            max-width: 80%;
+        }
+
+        @media screen and (max-width:1024px) {
+            .clients-logo {
+                width: 43%;
+            }
+
+        }
+
+        @media screen and (max-width:480px) {
+            .clients-logo {
+                width: 100%;
+                padding: 5px;
+            }
+
+            img.client-logo-6,
+            img.client-logo-7,
+            img.client-logo-8,
+            img.client-logo-2 {
+                max-width: 100%;
+            }
+
+            img.client-logo-4,
+            img.client-logo-6 {
+                max-width: 100%;
+            }
+
+            .clients-container-main h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+            <a href="index.html" class="logo d-flex align-items-center">
+                <img src="assets/img/white.png" class="logoimg" alt="">
+            </a>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+                    <li><a class=" nav-link scrollto" href="about2.html">About Us</a></li>
+                    <li><a class="nav-link scrollto" href="index.html#services">Services</a></li>
+                    <li><a class="nav-link scrollto" href="index.html#ourclients">Our Clients</a></li>
+                    <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
+                    <li><a class="getstarted scrollto" href="index.html#contact">Enquiry</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+
+        </div>
+    </header>
+    <div class="clients-container-main">
+
+        <h1>Global Clients</h1>
+        <div class="client-logo-main">
+            <div class="clients-logo">
+                <a href="https://themagnawoman.com/" target="_blank"><img src="./assets/img/logo8.webp" alt=""
+                        class="img-fluid"></a>
+            </div>
+            <div class="clients-logo">
+                <a href="https://lacostebakery.com/" target="_blank"><img src="./assets/img/logo6.png" alt=""
+                        class="img-fluid"></a>
+            </div>
+            <div class="clients-logo">
+                <a href="https://beautybraidsbyjuu.com/" target="_blank"><img src="./assets/img/logo-11.png" alt=""
+                        class="img-fluid beauty">
+                </a>
+            </div>
+        </div>
+
+        <h1>Indian Clients</h1>
+        <div class="client-logo-main">
+            <div class="clients-logo">
+                <a href="https://kashafperfumes.com/shop/" target="_blank"><img src="./assets/img/logo8.png" alt=""
+                        class="img-fluid"></a>
+            </div>
+            <div class="clients-logo">
+                <a href="https://suffahacademy.ca/" target="_blank"><img src="./assets/img/logo9.png" alt=""
+                        class="img-fluid"></a>
+            </div>
+            <div class="clients-logo">
+                <a href="https://teamace.ca/" target="_blank"><img src="./assets/img/logo-1.png" alt=""
+                        class="img-fluid"></a>
+            </div>
+            <div class="clients-logo">
+                <a href="https://sirahomz.com/" target="_blank"><img src="./assets/img/logo-2.png" alt=""
+                        class="img-fluid"></a>
+            </div>
+            <div class="clients-logo">
+                <a href="https://jpin.co/" target="_blank"><img src="./assets/img/logo3.png" alt=""
+                        class="img-fluid logo-3"></a>
+            </div>
+            <div class="clients-logo">
+                <a href="https://goldencrownglass.com/" target="_blank"><img src="./assets/img/logo4.png" alt=""
+                        class="img-fluid"></a>
+            </div>
+            <div class="clients-logo">
+                <a href="https://shafeinc.com/" target="_blank"><img src="./assets/img/logo5.png" alt=""
+                        class="img-fluid"></a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+
+
+        <div class="footer-top">
+            <div class="container ">
+                <div class="row gy-4 ">
+                    <div class="col-lg-5  col-md-12 footer-info">
+                        <div class="footer-img">
+                            <!-- <img src="assets/img/white.png" class="logoimg" alt=""> -->
+                            <h1>ABOUT US</h1>
+                        </div>
+                        <a href="index.html" class="logo d-flex align-items-center">
+                        </a>
+                        <p>For 11+ years, we've excelled in Tally solutions, delivering quality and satisfaction. We
+                            also create
+                            engaging websites for impactful online presence.</p>
+                    </div>
+                    <div class="col-lg-2 col-6 footer-links">
+                        <h4>tally</h4>
+                        <ul>
+                            <li><i class="bi bi-chevron-right"></i> <a href="tally2.html">Cost Control</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="tally2.html">Sales Order Alteration</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="tally2.html">Negative Stock Control</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="tally2.html">Grace Period</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="tally2.html">Order Control</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="tally2.html">Grace Period</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="tally2.html">Sms Module</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="tally2.html">Digital Signature</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="tally2.html">Auto Email Print</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2  col-6 footer-links">
+                        <h4>Our Services</h4>
+                        <ul>
+                            <li><i class="bi bi-chevron-right"></i> <a href="web2.html">Web Development </a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#contact">App Development</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="tally2.html">Tally Modules</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="web2.html">Static Website</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="web2.html">Dynamic Website</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="web2.html">E-commerce Website</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="web2.html">Static Page</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="web2.html">Dynamic Page</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-6 footer-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><i class="bi bi-chevron-right"></i> <a href="index.html#hero">Home</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="about2.html">About Us</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="index.html#services">Services</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="index.html#ourclients">Our Clients</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="index.html#contact">Contact</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="index.html#contact">Enquiry</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3  col-md-12 footer-contact text-md-start">
+                        <h4>Get In touch</h4>
+                        <p class="footer-address"><i class="bi bi-telephone"></i>+919619756588/89</p>
+                        <p class="footer-address"><i class="bi bi-envelope"></i>razasofttech26@gmail.com</p>
+                        <p class="footer-address"><i class="fa fa-home"></i>B/713,Om Sai krupa Society
+                            Anant Kanekar Marg
+                            Opp Bandra Court
+                            Bandra(East)
+                            Mumbai-400051</p>
+                        <div class="social-links mt-3">
+                            <a href='https://wa.me/+919619756588' target="_blank" class="whatsapp"><i
+                                    class="bi bi-whatsapp"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=100094121487776" target="_blank"
+                                class="facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="https://instagram.com/razasoftwaretechnologies?igshid=MzRlODBiNWFlZA=="
+                                target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/raza-software-technologies-408a63282/" target="_blank"
+                                class="linkedin"><i class="bi bi-linkedin"></i></a>
+                            <a href='https://twitter.com/RazaSoftTech' target="_blank" class="twitter"><i
+                                    class="bi bi-twitter"></i></a>
+                            <a href='https://www.youtube.com/channel/UCXAypNhzAsq7-5kl6g4MuOg' target="_blank"
+                                class="youtube"><i class="bi bi-youtube"></i></a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong><span>Raza Software & Technologies</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+                Designed & Develope by <a href="https://www.linkedin.com/in/raza-software-technologies-408a63282/">Raza
+                    Software
+                    & Technologies</a>
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+
+    <a href="https://wa.me/+919619756588" class="back-to-top d-flex align-items-center justify-content-center">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+
+    <!-- ------ swiper js----- -->
+
+
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        function openWebsite(clienturl) {
+
+            window.open(clienturl, '_blank');
+        }
+
+    </script>
+
+</body>
+
+</html>
